@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Free texture packer v0.6.7 http://free-tex-packer.com
+-->
+<TextureAtlas imagePath="Purple.png" width="3898" height="2404">
+  <SubTexture name="PurpleDown0005" x="10" y="10"  width="524" height="425" frameX="-224" frameY="-352" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleRight0005" x="554" y="10"  width="477" height="427" frameX="-361" frameY="-330" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleLeft0004" x="1051" y="10"  width="502" height="433" frameX="-150" frameY="-331" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleRight0004" x="1573" y="10"  width="436" height="434" frameX="-411" frameY="-322" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0002" x="2029" y="10"  width="574" height="436" frameX="-220" frameY="-323" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleLeft0005" x="2623" y="10"  width="534" height="437" frameX="-142" frameY="-334" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0000" x="3177" y="10"  width="577" height="437" frameX="-223" frameY="-321" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleRight0003" x="10" y="455"  width="482" height="439" frameX="-420" frameY="-318" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleRight0000" x="512" y="457"  width="502" height="441" frameX="-414" frameY="-316" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0004" x="1034" y="464"  width="569" height="438" frameX="-216" frameY="-320" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleDown0004" x="1623" y="466"  width="530" height="439" frameX="-202" frameY="-364" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleDown0002" x="2173" y="467"  width="536" height="441" frameX="-192" frameY="-383" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleDown0001" x="2729" y="467"  width="535" height="442" frameX="-191" frameY="-382" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleDown0000" x="3284" y="467"  width="535" height="443" frameX="-191" frameY="-380" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0006" x="10" y="918"  width="566" height="443" frameX="-215" frameY="-315" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleRight0001" x="596" y="922"  width="501" height="444" frameX="-418" frameY="-313" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleRight0002" x="1117" y="925"  width="500" height="444" frameX="-421" frameY="-313" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0008" x="1637" y="928"  width="564" height="444" frameX="-216" frameY="-314" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleDown0003" x="2221" y="929"  width="535" height="445" frameX="-195" frameY="-374" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0004" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0002" x="3342" y="930"  width="546" height="456" frameX="-233" frameY="-307" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0000" x="10" y="1381"  width="547" height="457" frameX="-234" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleUp0005" x="577" y="1386"  width="382" height="462" frameX="-265" frameY="-296" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleLeft0000" x="979" y="1389"  width="556" height="464" frameX="-70" frameY="-326" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleLeft0002" x="1555" y="1392"  width="514" height="464" frameX="-105" frameY="-328" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleLeft0003" x="2089" y="1394"  width="528" height="476" frameX="-105" frameY="-328" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleUp0004" x="2637" y="1405"  width="473" height="480" frameX="-257" frameY="-277" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleLeft0001" x="3130" y="1406"  width="555" height="481" frameX="-66" frameY="-327" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleUp0003" x="10" y="1858"  width="513" height="499" frameX="-248" frameY="-259" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleUp0000" x="543" y="1873"  width="542" height="500" frameX="-234" frameY="-258" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleUp0002" x="1105" y="1876"  width="558" height="503" frameX="-222" frameY="-255" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleUp0001" x="1683" y="1890"  width="558" height="504" frameX="-223" frameY="-254" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0001" x="10" y="1381"  width="547" height="457" frameX="-234" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0003" x="3342" y="930"  width="546" height="456" frameX="-233" frameY="-307" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0005" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0006" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0007" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0008" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0009" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0010" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0011" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0012" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0013" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0014" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleSurprised0015" x="2776" y="930"  width="546" height="455" frameX="-233" frameY="-308" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0001" x="3177" y="10"  width="577" height="437" frameX="-223" frameY="-321" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0003" x="2029" y="10"  width="574" height="436" frameX="-220" frameY="-323" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0005" x="1034" y="464"  width="569" height="438" frameX="-216" frameY="-320" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0007" x="10" y="918"  width="566" height="443" frameX="-215" frameY="-315" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0009" x="1637" y="928"  width="564" height="444" frameX="-216" frameY="-314" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0010" x="1637" y="928"  width="564" height="444" frameX="-216" frameY="-314" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0011" x="1637" y="928"  width="564" height="444" frameX="-216" frameY="-314" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0012" x="1637" y="928"  width="564" height="444" frameX="-216" frameY="-314" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0013" x="1637" y="928"  width="564" height="444" frameX="-216" frameY="-314" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0014" x="1637" y="928"  width="564" height="444" frameX="-216" frameY="-314" frameWidth="1000" frameHeight="1000"/>
+  <SubTexture name="PurpleIdle0015" x="1637" y="928"  width="564" height="444" frameX="-216" frameY="-314" frameWidth="1000" frameHeight="1000"/>
+</TextureAtlas>

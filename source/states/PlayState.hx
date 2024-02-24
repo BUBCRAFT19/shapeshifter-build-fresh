@@ -265,6 +265,13 @@ class PlayState extends MusicBeatState
 	public var startCallback:Void->Void = null;
 	public var endCallback:Void->Void = null;
 
+	// dodge stuff
+	var isDodging:Bool = false;
+	var canDodge:Bool = false; // just be default, so you can't dodge in songs where the mechanic is not needed
+	var stopSectionMoving:Bool = false; // to stop the camera from moving away, too early
+	var dodgeTwn:FlxTween;
+	var dodgeFails:Int = 0;
+
 	override public function create()
 	{
 		//trace('Playback Rate: ' + playbackRate);
@@ -392,8 +399,8 @@ class PlayState extends MusicBeatState
 		}
 
 		add(gfGroup);
-		add(dadGroup);
 		add(boyfriendGroup);
+		add(dadGroup);
 
 		#if LUA_ALLOWED
 		luaDebugGroup = new FlxTypedGroup<DebugLuaText>();
@@ -1130,7 +1137,8 @@ class PlayState extends MusicBeatState
 
 		var tempScore:String = 'Score: ${songScore}'
 		+ (!instakillOnMiss ? ' | Misses: ${songMisses}' : "")
-		+ ' | Rating: ${str}';
+		+ ' | Rating: ${str}' 
+		+ ' | Dodge Fails Left: ${3 - (dodgeFails + 1)}/2'; // MAKE SURE TO CHANGE THIS LATER TO ONLY APPEAR IN SONGS WITH THE DODGE MECHANIC
 		// "tempScore" variable is used to prevent another memory leak, just in case
 		// "\n" here prevents the text from being cut off by beat zooms
 		scoreTxt.text = '${tempScore}\n';
@@ -1796,6 +1804,10 @@ class PlayState extends MusicBeatState
 		}
 		#end
 
+		if (FlxG.keys.justPressed.SPACE && canDodge) {
+			isDodging = true; // wahr
+		}
+
 		setOnScripts('cameraX', camFollow.x);
 		setOnScripts('cameraY', camFollow.y);
 		setOnScripts('botPlay', cpuControlled);
@@ -2188,6 +2200,52 @@ class PlayState extends MusicBeatState
 			case 'Play Sound':
 				if(flValue2 == null) flValue2 = 1;
 				FlxG.sound.play(Paths.sound(value1), flValue2);
+			case "Dodge Mechanic": // No idea if this is a good way of doing this, but it's my code, so fuck you
+				if (flValue1 == null || flValue1 == 0) // If the value is true (1), then the player will not be able to dodge
+					canDodge = true;
+
+				// PLEASE make sure your opponent character has a proper "pre-attack" & "attack" animation
+				// Also make sure your boyfriend character has a proper "dodge" & "hit" animation
+				// otherwise, this will not work properly
+				FlxG.sound.play(Paths.sound("badnoise3"), 1); // Sound queue
+				dad.playAnim("pre-attack", true);
+				dad.specialAnim = true;
+				stopSectionMoving = true;
+				moveCamera(true); // might be a bit buggy bc of the sectionHit thing, maybe I'll make something to stop it from doing that
+				
+				// 24 frames of animation / 24 FPS = 1 second to react
+				dodgeTwn = FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom + 0.2}, (dad.animation.curAnim.frames.length / dad.animation.curAnim.frameRate), {ease: FlxEase.quadInOut, onComplete:
+					function (twn:FlxTween)
+						{
+							FlxTween.tween(FlxG.camera, {zoom: FlxG.camera.zoom - 0.2}, 0.8, {ease: FlxEase.cubeInOut});
+							dodgeTwn = null;
+							dad.playAnim("attack", true);
+							if (!isDodging){
+								switch (dodgeFails) {
+									case 0: // first fail, pretty lenient
+										health -= 0.8; // 40% health loss
+									case 1: // second fail, less lenient
+										health -= 1.5; // 75% health loss
+									case 2: // third fail, you're dead
+										health -= 2; // 100% health loss
+								}
+								dodgeFails++;
+								boyfriend.playAnim("hit", true);
+								boyfriend.specialAnim = true;
+								FlxG.sound.play(Paths.sound("ANGRY"), 1); // You got hit, lmao gottem
+								updateScore(); // so that the dodge Fail updates
+							} else {
+								boyfriend.playAnim("dodge", true);
+								boyfriend.specialAnim = true;
+								FlxG.sound.play(Paths.sound("dialogueClose"), 1);
+								isDodging = false;
+							}
+							canDodge = false; // to prevent the player from stacking dodges
+							dad.specialAnim = false;
+							boyfriend.specialAnim = false;
+							stopSectionMoving = false;
+						}
+					});
 		}
 
 		stagesFunc(function(stage:BaseStage) stage.eventCalled(eventName, value1, value2, flValue1, flValue2, strumTime));
@@ -3119,7 +3177,7 @@ class PlayState extends MusicBeatState
 	{
 		if (SONG.notes[curSection] != null)
 		{
-			if (generatedMusic && !endingSong && !isCameraOnForcedPos)
+			if (generatedMusic && !endingSong && !isCameraOnForcedPos && !stopSectionMoving)
 				moveCameraSection();
 
 			if (camZooming && FlxG.camera.zoom < 1.35 && ClientPrefs.data.camZooms)

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bluesus.png">
+	<!-- Created with Adobe Animate version 22.0.5.191 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="boddydead0000" x="2" y="2" width="898" height="800"/>
+	<SubTexture name="boddydead0001" x="2" y="2" width="898" height="800"/>
+	<SubTexture name="boddydead0002" x="903" y="2" width="898" height="800"/>
+	<SubTexture name="boddydead0003" x="903" y="2" width="898" height="800"/>
+	<SubTexture name="boddydead0004" x="1804" y="2" width="898" height="800"/>
+	<SubTexture name="boddydead0005" x="1804" y="2" width="898" height="800"/>
+	<SubTexture name="boddydead0006" x="2705" y="2" width="898" height="800"/>
+	<SubTexture name="boddydead0007" x="2705" y="2" width="898" height="800"/>
+	<SubTexture name="boddydead0008" x="2" y="805" width="898" height="800"/>
+	<SubTexture name="boddydead0009" x="2" y="805" width="898" height="800"/>
+	<SubTexture name="boddydead0010" x="903" y="805" width="898" height="800"/>
+	<SubTexture name="boddydead0011" x="903" y="805" width="898" height="800"/>
+	<SubTexture name="boddydead0012" x="1804" y="805" width="898" height="800"/>
+	<SubTexture name="boddydead0013" x="1804" y="805" width="898" height="800"/>
+	<SubTexture name="boddydead0014" x="2705" y="805" width="898" height="800"/>
+	<SubTexture name="boddydead0015" x="2705" y="805" width="898" height="800"/>
+	<SubTexture name="boddydead0016" x="2" y="1608" width="898" height="800"/>
+	<SubTexture name="boddydead0017" x="2" y="1608" width="898" height="800"/>
+	<SubTexture name="boddydead0018" x="903" y="1608" width="898" height="800"/>
+	<SubTexture name="boddydead0019" x="903" y="1608" width="898" height="800"/>
+</TextureAtlas>

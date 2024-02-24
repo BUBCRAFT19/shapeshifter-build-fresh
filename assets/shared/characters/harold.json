@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				213,
+				-40
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Harold Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				223,
+				-39
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Harold Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				223,
+				-47
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Harold Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				199,
+				-38
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Harold Right",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				213,
+				-40
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Harold Up",
+			"indices": []
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/Harold",
+	"position": [
+		-20,
+		-30
+	],
+	"healthicon": "harold",
+	"flip_x": false,
+	"healthbar_colors": [
+		102,
+		51,
+		51
+	],
+	"camera_position": [
+		-120,
+		110
+	],
+	"sing_duration": 4,
+	"scale": 1
+}

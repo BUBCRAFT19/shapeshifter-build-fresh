@@ -1,63 +1,63 @@
 {
 	"animations": [
 		{
-			"offsets": [
-				1,
-				0
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "idle",
 			"loop": false,
-			"name": "Idle"
+			"offsets": [
+				14,
+				7
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				149,
+				166,
 				37
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
-			"name": "bananaSINGleft"
+			"fps": 24,
+			"name": "bananaSINGleft",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				50,
+				47,
 				-140
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
-			"name": "bananaSINGdown"
+			"fps": 24,
+			"name": "bananaSINGdown",
+			"indices": []
 		},
 		{
+			"loop": false,
 			"offsets": [
-				-45,
-				23
+				-52,
+				25
 			],
-			"indices": [],
-			"fps": 24,
 			"anim": "singUP",
-			"loop": false,
-			"name": "bananaSINGup"
+			"fps": 24,
+			"name": "bananaSINGup",
+			"indices": []
 		},
 		{
-			"offsets": [
-				-75,
-				-29
-			],
-			"indices": [],
-			"fps": 24,
-			"anim": "singRIGHT",
 			"loop": false,
-			"name": "bananaSINGright"
+			"offsets": [
+				-69,
+				-32
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "bananaSINGright",
+			"indices": []
 		}
 	],
 	"no_antialiasing": false,
-	"image": "characters/bananeo",
+	"image": "characters/banangus",
 	"position": [
 		-125,
 		235
@@ -74,5 +74,6 @@
 		0
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 1,
+	"_editor_isPlayer": false
 }

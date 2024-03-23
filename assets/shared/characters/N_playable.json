@@ -1,0 +1,101 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				345,
+				319
+			],
+			"anim": "idle",
+			"fps": 24,
+			"name": "N Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				365,
+				318
+			],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "N Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				349,
+				319
+			],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "N Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				341,
+				319
+			],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "N Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				318,
+				326
+			],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "N Right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				344,
+				320
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "pre-attack",
+			"indices": [],
+			"name": "N PreAttack"
+		},
+		{
+			"offsets": [
+				298,
+				324
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "N Attack"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/N_Impostor",
+	"position": [
+		-20,
+		370
+	],
+	"healthicon": "n",
+	"flip_x": false,
+	"healthbar_colors": [
+		255,
+		135,
+		0
+	],
+	"camera_position": [
+		460,
+		-280
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

@@ -5,10 +5,10 @@
 				233,
 				-30
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "idle",
-			"loop": false,
+			"indices": [],
 			"name": "PurpleIdle"
 		},
 		{
@@ -16,10 +16,10 @@
 				231,
 				-29
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singLEFT",
-			"loop": false,
+			"indices": [],
 			"name": "PurpleLeft"
 		},
 		{
@@ -27,10 +27,10 @@
 				232,
 				-30
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singDOWN",
-			"loop": false,
+			"indices": [],
 			"name": "PurpleDown"
 		},
 		{
@@ -38,10 +38,10 @@
 				231,
 				-29
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singUP",
-			"loop": false,
+			"indices": [],
 			"name": "PurpleUp"
 		},
 		{
@@ -49,10 +49,10 @@
 				232,
 				-29
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "singRIGHT",
-			"loop": false,
+			"indices": [],
 			"name": "PurpleRight"
 		},
 		{
@@ -60,18 +60,18 @@
 				232,
 				-30
 			],
-			"indices": [],
+			"loop": false,
 			"fps": 24,
 			"anim": "surprise",
-			"loop": false,
+			"indices": [],
 			"name": "PurpleSurprised"
 		}
 	],
 	"no_antialiasing": false,
 	"image": "characters/Purple",
 	"position": [
-		0,
-		-20
+		-20,
+		0
 	],
 	"healthicon": "purple",
 	"flip_x": false,
@@ -85,5 +85,6 @@
 		80
 	],
 	"sing_duration": 4,
-	"scale": 1
+	"scale": 0.9,
+	"_editor_isPlayer": false
 }

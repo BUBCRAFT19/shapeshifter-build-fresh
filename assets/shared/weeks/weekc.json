@@ -1,0 +1,14 @@
+{
+  "songs": [["whiskers", "cat", [146, 113, 253]]],
+  "hiddenUntilUnlocked": false,
+  "hideFreeplay": false,
+  "weekBackground": "stage",
+  "difficulties": "",
+  "weekCharacters": ["dad", "bf", "gf"],
+  "storyName": "doodle cat",
+  "weekName": "cat week",
+  "freeplayColor": [146, 113, 253],
+  "hideStoryMode": true,
+  "weekBefore": "tutorial",
+  "startUnlocked": true
+}
